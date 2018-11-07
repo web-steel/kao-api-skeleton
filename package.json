@@ -1,0 +1,39 @@
+{
+  "name": "koa2-skeleton",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vladimir Markov <vladimir.v.markov@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --harmony ./index.js",
+    "dev": "nodemon ./index.js",
+    "eslint": "eslint app/",
+    "coverage": "NODE_ENV=test NODE_TEST=true istanbul cover _mocha ./tests/functional/*.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.2",
+    "dotenv": "^6.1.0",
+    "es6-error": "^4.1.1",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^3.0.0",
+    "koa-helmet": "^4.0.0",
+    "koa-response-time": "^2.0.0",
+    "koa-router": "^7.4.0",
+    "koa2-ratelimit": "^0.7.0",
+    "lodash": "^4.17.11",
+    "node-input-validator": "^2.3.2",
+    "optimist": "^0.6.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "enlist": "^0.1.0",
+    "eslint": "^5.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.5",
+    "supertest": "^3.1.0"
+  }
+}
