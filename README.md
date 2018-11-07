@@ -51,17 +51,17 @@ console
 ========
 
 ```sh
-Usage: /usr/bin/node ./console.js --section [string] [--action [string]] [--opt [object]]
+Usage: /usr/bin/node ./console.js --controller [string] [--action [string]] [--opt [object]]
 
 Options:
   --opt, --options  example --opt.app=mobile --opt.s=1  [default: {}]
-  --section                                             [required]
+  --controller                                             [required]
   --action                                              [default: "index"]
 ```
 
 For example 
 ```sh
-$ ./console.js --section=default --opt.hello=world
+$ ./console.js --controller=default --opt.hello=world
 Hello world defaultController & index action with options: {"hello":"world"}
 ```
 
