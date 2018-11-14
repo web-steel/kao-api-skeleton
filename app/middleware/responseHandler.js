@@ -32,27 +32,27 @@ function responseHandler() {
         ctx.res.ok = (params = {}) => {
             ctx.res.success({
                 ...params,
-                statusCode: statusCodes.OK
+                statusCode: statusCodes.OK,
             });
         };
 
         ctx.res.created = (params = {}) => {
             ctx.res.success({
                 ...params,
-                statusCode: statusCodes.CREATED
+                statusCode: statusCodes.CREATED,
             });
         };
 
         ctx.res.accepted = (params = {}) => {
             ctx.res.success({
                 ...params,
-                statusCode: statusCodes.ACCEPTED
+                statusCode: statusCodes.ACCEPTED,
             });
         };
 
         ctx.res.noContent = () => {
             ctx.res.success({
-                statusCode: statusCodes.NO_CONTENT
+                statusCode: statusCodes.NO_CONTENT,
             });
         };
 

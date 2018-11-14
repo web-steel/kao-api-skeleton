@@ -19,13 +19,13 @@ function errorHandler() {
                 ctx.res.error({
                     statusCode: err.statusCode,
                     code: err.code,
-                    message: err.message
+                    message: err.message,
                 });
             } else {
                 ctx.res.error({
                     status: 500,
                     code: 'UNKNOWN_ERROR',
-                    message: 'The server encountered an unknown error.'
+                    message: 'The server encountered an unknown error.',
                 });
             }
             ctx.app.emit('error', err, ctx);

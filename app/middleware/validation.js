@@ -6,7 +6,7 @@ module.exports = () => {
     return async (ctx, next) => {
         const valid = ctx.validate;
 
-        ctx.validate = async function(inputs, rules, message) {
+        ctx.validate = async function (inputs, rules, message) {
             const props = {};
             for(let prop in rules) {
                 if(rules.hasOwnProperty(prop)) {
@@ -32,7 +32,7 @@ module.exports = () => {
         };
 
         await next();
-    }
+    };
 };
 
 /**

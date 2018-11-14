@@ -2,7 +2,6 @@
 
 const uuidV4 = require('uuid/v4');
 
-
 /**
  * Return middleware that gets an unique request id from a header or
  * generates a new id.
@@ -17,7 +16,7 @@ function requestId(options = {}) {
     const {
         header = 'X-Request-Id',
         propertyName = 'reqId',
-        generator = uuidV4
+        generator = uuidV4,
     } = options;
 
     return (ctx, next) => {
