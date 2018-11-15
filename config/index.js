@@ -1,3 +1,5 @@
+"use strict";
+
 const merge = require('lodash/merge');
 
 if (process.env.NODE_ENV !== 'production') {

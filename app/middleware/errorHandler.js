@@ -4,6 +4,10 @@ const ExtendableError = require('es6-error');
 const { NotFound } = require('../constants/error');
 const statusCodes = require('../constants/statusCodes');
 
+/**
+ * Error handling
+ * @returns {Function} Koa middleware.
+ */
 function errorHandler() {
     return async (ctx, next) => {
         try {

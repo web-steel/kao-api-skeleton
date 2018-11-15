@@ -22,19 +22,19 @@ exports.NotFound = class notFound extends ExtendableError {
 };
 
 exports.BadRequest = class BadRequest extends ExtendableError {
-    constructor(errors) {
-        super(errors);
+    constructor(error) {
+        super();
         this.statusCode = statusCodes.BAD_REQUEST;
         this.code = 'BAD_REQUEST';
-        this.message = errors;
+        this.message = error;
     }
 };
 
 exports.UnprocessableEntity = class UnprocessableEntity extends ExtendableError {
-    constructor(errors) {
-        super(errors);
+    constructor(error) {
+        super();
         this.statusCode = statusCodes.UNPROCESSABLE_ENTITY;
         this.code = 'UNPROCESSABLE_ENTITY';
-        this.message = errors;
+        this.message = error;
     }
 };

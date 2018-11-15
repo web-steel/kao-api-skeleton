@@ -2,7 +2,7 @@
 
 const { BadRequest, UnprocessableEntity } = require('../constants/error');
 
-module.exports = () => {
+function validation() {
     return async (ctx, next) => {
         const valid = ctx.validate;
 
@@ -31,9 +31,9 @@ module.exports = () => {
             return true;
         };
 
-        await next();
+        return await next();
     };
-};
+}
 
 /**
  *
@@ -68,3 +68,4 @@ function getError(errors) {
     return error;
 }
 
+module.exports = validation;

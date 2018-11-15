@@ -7,7 +7,7 @@ class HomeController {
      * @param {ctx} ctx Koa context
      */
     index(ctx) {
-        ctx.body = "START API";
+        ctx.body = "Welcome a koa2-api-skeleton";
     }
 }
 
